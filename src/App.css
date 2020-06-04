@@ -1,6 +1,17 @@
 .Navbar {
+  z-index: 999;
   color: white;
   overflow: hidden;
   position: fixed;
   top: 0;
+}
+
+.Landing {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
