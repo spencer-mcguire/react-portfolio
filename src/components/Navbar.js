@@ -6,9 +6,9 @@ export const Navbar = () => {
   return (
     // Main nav container
     <Flex className='Navbar' pt='2%' justify='center'>
-      <Flex justify='space-around' w='30%'>
-        <a href=''> About me </a>
-        <a href=''> Projects </a>
+      <Flex justify='space-around' w='35%'>
+        <a href='#aboutme'> About me </a>
+        <a href='#projects'> Projects </a>
         <a href=''> Contact </a>
       </Flex>
     </Flex>
