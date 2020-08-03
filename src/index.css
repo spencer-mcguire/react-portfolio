@@ -2,7 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 code {
@@ -47,7 +47,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

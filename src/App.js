@@ -13,7 +13,7 @@ import { Projects } from './components/Projects';
 function App() {
   return (
     <ThemeProvider theme={customTheme}>
-      <Flex w='100%' minH='100vh' justify='center'>
+      <Flex w='100%' justify='center'>
         <Flex w='100%' flexDir='column' wrap='no-wrap'>
           <Navbar />
 

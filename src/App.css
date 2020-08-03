@@ -2,7 +2,7 @@
   background-color: #ff6700;
 } */
 
-/* .Navbar {
+.Navbar {
   z-index: 999;
   color: black;
   overflow: hidden;
@@ -10,14 +10,15 @@
   top: 0;
   width: 100%;
   max-width: 1920px;
-} */
+}
 
 a {
   text-decoration: none;
-  color: black;
+  color: grey;
   font-size: 1.2rem;
 }
 
 a:hover {
   text-decoration: underline;
+  color: black;
 }
