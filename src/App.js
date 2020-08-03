@@ -14,10 +14,9 @@ function App() {
   return (
     <ThemeProvider theme={customTheme}>
       <Flex w='100%' minH='100vh' justify='center'>
-        <Flex maxW='1920px' w='100%' flexDir='column' wrap='no-wrap'>
-          <header>
-            <Navbar />
-          </header>
+        <Flex w='100%' flexDir='column' wrap='no-wrap'>
+          <Navbar />
+
           {/* BODY */}
           <Landing />
 

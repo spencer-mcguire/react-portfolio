@@ -2,7 +2,7 @@
   background-color: #ff6700;
 } */
 
-.Navbar {
+/* .Navbar {
   z-index: 999;
   color: black;
   overflow: hidden;
@@ -10,22 +10,10 @@
   top: 0;
   width: 100%;
   max-width: 1920px;
-}
+} */
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-
-/* .Landing {
-  /* max-width: 1920px;
-  width: 100%; */
-/* height: 100vh; */
-/* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('logo.svg'); */
-/* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; */
-/* } */

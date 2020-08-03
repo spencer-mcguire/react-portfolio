@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { Flex, Box, Text } from '@chakra-ui/core';
+import { Flex, Box, Text, Grid } from '@chakra-ui/core';
 
 export const Landing = () => {
   // function to scroll to about me section
@@ -13,11 +13,11 @@ export const Landing = () => {
   };
 
   return (
-    <div className='Landing'>
+    <div>
       {/*Main container  */}
-      <Flex w='100%' h='100%' minH='100vh' flexDir='column'>
+      <Flex w='100%' h='100%' minH='100vh' flexDir='column' align='center'>
         {/* TOP CONTAINER */}
-        <Flex w='100%' h='60%' border='2px solid red'>
+        <Flex maxW='1920px' w='100%' h='60%' border='2px solid red'>
           <Flex
             w='50%'
             align='center'
@@ -36,8 +36,32 @@ export const Landing = () => {
           </Flex>
         </Flex>
         {/* BOTTOM CONTAINER */}
-        <Flex w='100%' h='40%' border='2px solid blue' background='#ff2252'>
-          <p> stuff</p>
+        <Flex
+          w='100%'
+          h='40%'
+          background='#ff2252'
+          justify='center'
+          align='center'
+        >
+          {/* CARD CONTAINER */}
+          <Flex
+            maxW='1920px'
+            w='100%'
+            h='100%'
+            border='2px solid blue'
+            justify='space-around'
+            align='center'
+          >
+            <Box h='60%' w='10%' bg='white'>
+              <p>Content</p>
+            </Box>
+            <Box h='10%' w='10%' bg='white'>
+              <p>Content</p>
+            </Box>
+            <Box h='10%' w='10%' bg='white'>
+              <p>Content</p>
+            </Box>
+          </Flex>
         </Flex>
         {/* <Flex flexDir='column' align='center' justify='center'>
           <h1> Spencer McGuire </h1>
