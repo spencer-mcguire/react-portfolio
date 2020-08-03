@@ -17,3 +17,7 @@ a {
   color: black;
   font-size: 1.2rem;
 }
+
+a:hover {
+  text-decoration: underline;
+}
