@@ -67,7 +67,7 @@ export const Landing = () => {
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h='35%'
+          h='30%'
           mb='5%'
           background='rgba(255,35,60, 0.9)'
           // background='#ff2252'
@@ -77,7 +77,7 @@ export const Landing = () => {
         >
           <Flex
             w='100%'
-            h='70%'
+            h='80%'
             maxW='1000px'
             padding='2%'
             align='center'
@@ -99,13 +99,13 @@ export const Landing = () => {
           <Flex
             maxW='1920px'
             w='100%'
-            h='30%'
+            h='20%'
             justify='center'
             align='flex-start'
           >
             <Flex
               className='table'
-              h='1000px'
+              h='850px'
               w='20%'
               p='1%'
               zIndex='11'
@@ -114,35 +114,100 @@ export const Landing = () => {
               flexDir='column'
               align='center'
             >
-              <Box as={AiOutlineComment} size='100px' mb='30px' mt='10px' />
-              <h2>Front-end Developer</h2>
+              <Box
+                as={AiOutlineComment}
+                size='70px'
+                mb='30px'
+                mt='30px'
+                color='#2fcc76'
+              />
+              <Text fontSize='2xl' mb='30px'>
+                Front-end Developer
+              </Text>
+              <Text mb='50px' textAlign='center'>
+                In painting, you have unlimited power. You have the ability to
+                move mountains. Painting should do one thing. It should put
+                happiness in your heart. A happy cloud.
+              </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Languages I speak:
+              </Text>
+              <Text mb='50px'> JavaScript, HTML, CSS, Python </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Frameworks and tools:
+              </Text>
             </Flex>
 
             <Flex
-              h='1000px'
+              className='table'
+              h='850px'
               w='20%'
               p='1%'
+              zIndex='11'
               bg='white'
-              className='table'
               flexDir='column'
               align='center'
             >
-              <Box as={BsCodeSlash} size='100px' mb='30px' mt='10px' />
-              <h2>Back-end Developer</h2>
+              <Box
+                as={BsCodeSlash}
+                size='70px'
+                mb='30px'
+                mt='30px'
+                color='#2fcc76'
+              />
+              <Text fontSize='2xl' mb='30px'>
+                Back-end Developer
+              </Text>
+              <Text mb='50px' textAlign='center'>
+                In painting, you have unlimited power. You have the ability to
+                move mountains. Painting should do one thing. It should put
+                happiness in your heart. A happy cloud.
+              </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Languages I speak:
+              </Text>
+              <Text mb='50px'> JavaScript, HTML, CSS, Python </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Frameworks and tools:
+              </Text>
             </Flex>
             <Flex
-              h='1000px'
+              className='table'
+              h='850px'
               w='20%'
               p='1%'
               bg='white'
-              className='table'
+              zIndex='11'
               roundedRight='20px'
               flexDir='column'
               align='center'
             >
-              <Box as={IoIosBarcode} size='100px' mb='30px' mt='10px' />
-              <h2>What makes me different?</h2>
+              <Box
+                as={IoIosBarcode}
+                size='70px'
+                mb='30px'
+                mt='30px'
+                color='#2fcc76'
+              />
+              <Text fontSize='2xl' mb='30px'>
+                What makes me different?
+              </Text>
+              <Text mb='50px' textAlign='center'>
+                In painting, you have unlimited power. You have the ability to
+                move mountains. Painting should do one thing. It should put
+                happiness in your heart. A happy cloud.
+              </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Languages I speak:
+              </Text>
+              <Text mb='50px'> JavaScript, HTML, CSS, Python </Text>
+              <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
+                Frameworks and tools:
+              </Text>
             </Flex>
+          </Flex>
+          <Flex h='10%'>
+            <p> stuff </p>
           </Flex>
         </Flex>
       </Flex>
