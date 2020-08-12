@@ -113,6 +113,7 @@ export const Landing = () => {
               roundedLeft='20px'
               flexDir='column'
               align='center'
+              border='1px solid #E6ECF8'
             >
               <Box
                 as={AiOutlineComment}
@@ -136,6 +137,13 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
 
             <Flex
@@ -147,6 +155,7 @@ export const Landing = () => {
               bg='white'
               flexDir='column'
               align='center'
+              borderY='1px solid #E6ECF8'
             >
               <Box
                 as={BsCodeSlash}
@@ -170,6 +179,12 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
             <Flex
               className='table'
@@ -181,6 +196,7 @@ export const Landing = () => {
               roundedRight='20px'
               flexDir='column'
               align='center'
+              border='1px solid #E6ECF8'
             >
               <Box
                 as={IoIosBarcode}
@@ -204,6 +220,12 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
           </Flex>
           <Flex h='10%'>
