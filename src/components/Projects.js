@@ -5,16 +5,10 @@ import { Flex, Text, Link, Image, Stack } from '@chakra-ui/core';
 export const Projects = () => {
   return (
     <section id='projects'>
-      <Flex justify='center' align='center' pt='200px'>
+      <Flex justify='center' align='center' pt='200px' mb='15rem'>
         <Flex maxW='1920px' w='100%' flexDir='column'>
           {/* Project Header */}
-          <Flex
-            maxW='1920px'
-            justify='center'
-            align='center'
-            flexDir='column'
-            pb='80px'
-          >
+          <Flex justify='center' align='center' flexDir='column' pb='80px'>
             <Text fontSize='3xl' fontWeight='bold' p='35px'>
               My Recent Projects{' '}
             </Text>
