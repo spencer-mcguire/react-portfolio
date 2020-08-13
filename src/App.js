@@ -9,6 +9,7 @@ import { Navbar } from './components/Navbar';
 import { Landing } from './components/Landing';
 import { Aboutme } from './components/Aboutme';
 import { Projects } from './components/Projects';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -22,9 +23,7 @@ function App() {
 
           <Aboutme />
           <Projects />
-          <a href='https://stories.freepik.com/web'>
-            Illustration by Freepik Stories
-          </a>
+          <Footer />
         </Flex>
       </Flex>
     </ThemeProvider>
