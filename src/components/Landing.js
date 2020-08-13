@@ -1,9 +1,14 @@
 import React from 'react';
 
 import DevImg from '../Developer activity-bro.svg';
-import { AiFillGithub, AiFillLinkedin, AiOutlineComment } from 'react-icons/ai';
-import { BsCodeSlash } from 'react-icons/bs';
-import { IoIosBarcode } from 'react-icons/all';
+import {
+  AiFillGithub,
+  AiOutlineLinkedin,
+  AiOutlineComment,
+  MdMailOutline,
+  IoIosBarcode,
+  BsCodeSlash,
+} from 'react-icons/all';
 import { Flex, Box, Text, Button, Link, Image } from '@chakra-ui/core';
 
 export const Landing = () => {
@@ -37,11 +42,14 @@ export const Landing = () => {
                 <Link href='https://github.com/spencer-mcguire' isExternal>
                   <Box as={AiFillGithub} size='30px' color='grey' />
                 </Link>
+                <Link href='mailto:smcguire1826@gmail.com' isExternal>
+                  <Box as={MdMailOutline} size='30px' color='grey' />
+                </Link>
                 <Link
                   href='https://www.linkedin.com/in/spencer-mcguire/'
                   isExternal
                 >
-                  <Box as={AiFillLinkedin} size='30px' color='grey' />
+                  <Box as={AiOutlineLinkedin} size='30px' color='grey' />
                 </Link>
               </Flex>
               {/* BUTTON CONTAINER */}
@@ -113,6 +121,7 @@ export const Landing = () => {
               roundedLeft='20px'
               flexDir='column'
               align='center'
+              border='1px solid #E6ECF8'
             >
               <Box
                 as={AiOutlineComment}
@@ -136,6 +145,13 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
 
             <Flex
@@ -147,6 +163,7 @@ export const Landing = () => {
               bg='white'
               flexDir='column'
               align='center'
+              borderY='1px solid #E6ECF8'
             >
               <Box
                 as={BsCodeSlash}
@@ -170,6 +187,12 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
             <Flex
               className='table'
@@ -181,6 +204,7 @@ export const Landing = () => {
               roundedRight='20px'
               flexDir='column'
               align='center'
+              border='1px solid #E6ECF8'
             >
               <Box
                 as={IoIosBarcode}
@@ -204,6 +228,12 @@ export const Landing = () => {
               <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                 Frameworks and tools:
               </Text>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
+              <li>Something</li>
             </Flex>
           </Flex>
           <Flex h='10%'>

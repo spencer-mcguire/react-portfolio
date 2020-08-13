@@ -24,7 +24,7 @@ export const Navbar = () => {
   return (
     // Main nav container
     <Flex className='Navbar' w='100%' justify='center' align='center'>
-      <Flex w='100%' maxW='1920px' pt='1%' mx='1%' align='center'>
+      <Flex w='100%' maxW='1920px' mx='1%' align='center'>
         <Flex w='50%' align='center'>
           <Image src={ProfileLogo} size='100px' mx='20px' />
           <h1>SPENCER MCGUIRE</h1>
@@ -36,7 +36,7 @@ export const Navbar = () => {
             <a href='#' onClick={() => setIsOpen(true)}>
               Resume
             </a>
-            <a href='#'> Contact </a>
+            <a href='mailto:smcguire1826@gmail.com'> Contact </a>
           </Flex>
         </Flex>
         {/* RESUME DOWNLOAD MODAL */}
