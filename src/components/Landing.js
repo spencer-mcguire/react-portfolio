@@ -103,7 +103,7 @@ export const Landing = () => {
               Be careful.
             </Text>
           </Flex>
-          {/* CARD CONTAINER */}
+          {/* table CONTAINER */}
           <Flex
             maxW='1920px'
             w='100%'
@@ -122,6 +122,7 @@ export const Landing = () => {
               flexDir='column'
               align='center'
               border='1px solid #E6ECF8'
+              background='#FBFCFC'
             >
               <Box
                 as={AiOutlineComment}
@@ -164,6 +165,7 @@ export const Landing = () => {
               flexDir='column'
               align='center'
               borderY='1px solid #E6ECF8'
+              background='#FBFCFC'
             >
               <Box
                 as={BsCodeSlash}
@@ -205,6 +207,7 @@ export const Landing = () => {
               flexDir='column'
               align='center'
               border='1px solid #E6ECF8'
+              background='#FBFCFC'
             >
               <Box
                 as={IoIosBarcode}
