@@ -22,6 +22,9 @@ function App() {
 
           <Aboutme />
           <Projects />
+          <a href='https://stories.freepik.com/web'>
+            Illustration by Freepik Stories
+          </a>
         </Flex>
       </Flex>
     </ThemeProvider>
