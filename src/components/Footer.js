@@ -38,9 +38,23 @@ export const Footer = () => {
 
           {/* SOCIAL CONTAINER */}
           <Flex h='100px' w='20rem' align='center' justify='space-around'>
-            <Box as={GoMarkGithub} size='50px' color='white' />
-            <Box as={MdMailOutline} size='50px' color='white' />
-            <Box as={AiOutlineLinkedin} size='60px' color='white' />
+            <Link href='https://github.com/spencer-mcguire' isExternal>
+              <Box
+                as={GoMarkGithub}
+                size='50px'
+                color='white'
+                href='https://github.com/spencer-mcguire'
+              />
+            </Link>
+            <Link href='mailto:smcguire1826@gmail.com' isExternal>
+              <Box as={MdMailOutline} size='50px' color='white' />
+            </Link>
+            <Link
+              href='https://www.linkedin.com/in/spencer-mcguire/'
+              isExternal
+            >
+              <Box as={AiOutlineLinkedin} size='60px' color='white' />
+            </Link>
           </Flex>
 
           {/* 3rd container */}
@@ -70,7 +84,7 @@ export const Footer = () => {
                   color='#319795'
                   fontSize='2xl'
                   ml='8px'
-                  fontWeight='bold '
+                  fontWeight='bold'
                 >
                   Chakra UI
                 </Link>

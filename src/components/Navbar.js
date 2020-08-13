@@ -36,7 +36,7 @@ export const Navbar = () => {
             <a href='#' onClick={() => setIsOpen(true)}>
               Resume
             </a>
-            <a href='#'> Contact </a>
+            <a href='mailto:smcguire1826@gmail.com'> Contact </a>
           </Flex>
         </Flex>
         {/* RESUME DOWNLOAD MODAL */}
