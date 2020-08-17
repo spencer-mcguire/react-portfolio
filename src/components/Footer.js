@@ -8,7 +8,7 @@ import {
   GoHeart,
   AiOutlineCopyrightCircle,
 } from 'react-icons/all';
-import ChakraImg from '../chakra logo.png';
+import footLogo from '../footer_logo.png';
 
 export const Footer = () => {
   return (
@@ -31,9 +31,7 @@ export const Footer = () => {
         >
           {/* CONTENT CONTAINER */}
           <Flex h='125px' w='100%' justify='center' align='center'>
-            <Text fontSize='4xl' fontWeight='bold' color='white'>
-              S / M
-            </Text>
+            <Image src={footLogo} size='125px' />
           </Flex>
 
           {/* SOCIAL CONTAINER */}
@@ -81,7 +79,7 @@ export const Footer = () => {
                 <Link
                   href='https://chakra-ui.com/'
                   isExternal
-                  color='#319795'
+                  color='#ffffff'
                   fontSize='2xl'
                   ml='8px'
                   fontWeight='bold'
