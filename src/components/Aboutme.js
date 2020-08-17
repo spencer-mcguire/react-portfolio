@@ -31,11 +31,11 @@ export const Aboutme = () => {
                   about me
                 </Text>
                 <Text textAlign='center'>
-                  We can always carry this a step further. There's really no end
-                  to this. Let your heart take you to wherever you want to be.
-                  This is the time to get out all your flustrations, much better
-                  than kicking the dog around the house or taking it out on your
-                  spouse.
+                  A little about myself, before I decided to pursue development
+                  I owned and operated an audio engineering company here in
+                  Nashville where I gathered a great deal of non technical
+                  problem solving and conflict resolution skills. I then decided
+                  to make the switch into development by way of Lambda School.
                 </Text>
               </Flex>
             </Flex>
@@ -58,30 +58,33 @@ export const Aboutme = () => {
                 px='5rem'
               >
                 <Text mb={5} textAlign='center'>
-                  Each highlight must have it's own private shadow. Let's make
-                  some happy little clouds in our world. We're trying to teach
-                  you a technique here and how to use it. That's a crooked tree.
-                  We'll send him to Washington.
+                  Lambda School is an intensive agile based program with week
+                  long sprints. During a sprint I was required to not only learn
+                  new aspects of the language but also produce a product based
+                  on client requirements. Therefore I am no stranger to learning
+                  new frameworks, and even languages very quickly. During my
+                  time here I worked with cross functional teams made up of UX,
+                  UI, and back end developers where we created projects from
+                  idea to production over the course of 3 to 4 days to showcase
+                  our knowledge.
                 </Text>
                 <Text mb={5} textAlign='center'>
-                  Tree trunks grow however makes them happy. They say everything
-                  looks better with odd numbers of things. But sometimes I put
-                  even numbers—just to upset the critics. This present moment is
-                  perfect simply due to the fact you're experiencing it. Isn't
-                  that fantastic? You can just push a little tree out of your
-                  brush like that. This is unplanned it really just happens.
-                  Making all those little fluffies that live in the clouds.
-                  Let's go up in here, and start having some fun All you have to
-                  learn here is how to have fun. Only God can make a tree - but
-                  you can paint one. A tree needs to be your friend if you're
-                  going to paint him.
+                  I have worked on a great deal of projects but a few are close
+                  to my heart. One would be Beluga. Beluga is a proof of concept
+                  and more of a sandbox for attempting to solve some of the core
+                  issues with social media. I also had the honor of working on a
+                  project called Allay. Allay is a platform built to bridge the
+                  gap between LinkedIn and GlassDoor mainly for internal use of
+                  Lambda Students. Here Students have access to candid reviews
+                  not only about a company but also about the hiring and
+                  interview process.
                 </Text>
                 <Text mb={5} textAlign='center'>
-                  This is unplanned it really just happens. Making all those
-                  little fluffies that live in the clouds. Let's go up in here,
-                  and start having some fun All you have to learn here is how to
-                  have fun. Only God can make a tree - but you can paint one. A
-                  tree needs to be your friend if you're going to paint him.
+                  Bob Ross once said - "I believe talent is just a pursued
+                  interest." I have worn multiple hats over my professional
+                  career but I have finally found my 'thing'. Development is a
+                  way for me to let my creative side loose while simultaneously
+                  making the world a 'better' place one app at a time.
                 </Text>
               </Flex>
             </Flex>
