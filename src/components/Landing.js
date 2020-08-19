@@ -225,9 +225,8 @@ export const Landing = () => {
                   What makes me different?
                 </Text>
                 <Text h='100px' mb='50px' textAlign='center'>
-                  My biggest weakness is I refuse to be stagnant. I thrive on
-                  knowledge and I am determined to continue learning and shaping
-                  my craft.
+                  My biggest weakness is I refuse to be stagnant. I am
+                  determined to continue learning and shaping my craft.
                 </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Soft Skills:
