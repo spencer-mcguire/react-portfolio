@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DevImg from '../Developer activity-bro.svg';
+import DevImg from '../img/Developer activity-bro.svg';
 import {
   AiFillGithub,
   AiOutlineLinkedin,
