@@ -30,12 +30,9 @@ export const Aboutme = () => {
                 <Text fontSize='6xl' fontWeight='bold' zIndex='99' mb='30px'>
                   about me
                 </Text>
-                <Text textAlign='center'>
-                  A little about myself, before I decided to pursue development
-                  I owned and operated an audio engineering company here in
-                  Nashville where I gathered a great deal of non technical
-                  problem solving and conflict resolution skills. I then decided
-                  to make the switch into development by way of Lambda School.
+                <Text textAlign='center' fontSize='3xl' color='grey'>
+                  "Imagination is more important than knowledge. Knowledge is
+                  limited. Imagination encircles the world." - Albert Einstein
                 </Text>
               </Flex>
             </Flex>
@@ -58,26 +55,19 @@ export const Aboutme = () => {
                 px='5rem'
               >
                 <Text mb={5} textAlign='center'>
-                  Lambda School is an intensive agile based program with week
-                  long sprints. During a sprint I was required to not only learn
-                  new aspects of the language but also produce a product based
-                  on client requirements. Therefore I am no stranger to learning
-                  new frameworks, and even languages very quickly. During my
-                  time here I worked with cross functional teams made up of UX,
-                  UI, and back end developers where we created projects from
-                  idea to production over the course of 3 to 4 days to showcase
-                  our knowledge.
-                </Text>
-                <Text mb={5} textAlign='center'>
-                  I have worked on a great deal of projects but a few are close
-                  to my heart. One would be Beluga. Beluga is a proof of concept
-                  and more of a sandbox for attempting to solve some of the core
-                  issues with social media. I also had the honor of working on a
-                  project called Allay. Allay is a platform built to bridge the
-                  gap between LinkedIn and GlassDoor mainly for internal use of
-                  Lambda Students. Here Students have access to candid reviews
-                  not only about a company but also about the hiring and
-                  interview process.
+                  I am a Full Stack Developer specializing in React, JavaScript
+                  and Node.js. Before I became a developer I owned and operated
+                  City Limit Recording where I managed a group of audio
+                  engineers. While at CLR I mastered the art of self management
+                  and perfected prioritizing tasks. During my free time I held
+                  various positions at different start up crypto currency
+                  companies which lead me to development. I decided to attend
+                  Lambda School late 2019 ( an intensive 9 month development
+                  school) where I focused on full stack web development. Over
+                  the course of the last year I have worked on remote cross
+                  functional teams that prepared me to be a vital piece of a
+                  development team. I can not wait to see what is next and am
+                  welcoming all opportunities!
                 </Text>
                 <Text mb={5} textAlign='center'>
                   Bob Ross once said - "I believe talent is just a pursued
