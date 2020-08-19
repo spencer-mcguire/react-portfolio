@@ -8,7 +8,7 @@ import {
   GoHeart,
   AiOutlineCopyrightCircle,
 } from 'react-icons/all';
-import footLogo from '../footer_logo.png';
+import footLogo from '../img/footer_logo.png';
 
 export const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import myPDF from '../Spencer_McGuire_Resume.pdf';
-import ProfileLogo from '../profile_logo_200x200.png';
+import ProfileLogo from '../img/profile_logo_200x200.png';
 import {
   Flex,
   Image,

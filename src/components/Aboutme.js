@@ -30,19 +30,16 @@ export const Aboutme = () => {
                 <Text fontSize='6xl' fontWeight='bold' zIndex='99' mb='30px'>
                   about me
                 </Text>
-                <Text textAlign='center'>
-                  We can always carry this a step further. There's really no end
-                  to this. Let your heart take you to wherever you want to be.
-                  This is the time to get out all your flustrations, much better
-                  than kicking the dog around the house or taking it out on your
-                  spouse.
+                <Text textAlign='center' fontSize='3xl' color='grey'>
+                  "Imagination is more important than knowledge. Knowledge is
+                  limited. Imagination encircles the world." - Albert Einstein
                 </Text>
               </Flex>
             </Flex>
 
             <Flex w='100%' h='auto'>
               <Image
-                mb='-15.85rem'
+                mb='-15.45rem'
                 p='0%'
                 src={Aboutimg}
                 size='900px'
@@ -58,30 +55,26 @@ export const Aboutme = () => {
                 px='5rem'
               >
                 <Text mb={5} textAlign='center'>
-                  Each highlight must have it's own private shadow. Let's make
-                  some happy little clouds in our world. We're trying to teach
-                  you a technique here and how to use it. That's a crooked tree.
-                  We'll send him to Washington.
+                  I am a Full Stack Developer specializing in React, JavaScript
+                  and Node.js. Before I became a developer I owned and operated
+                  City Limit Recording where I managed a group of audio
+                  engineers. While at CLR I mastered the art of self management
+                  and perfected prioritizing tasks. During my free time I held
+                  various positions at different start up crypto currency
+                  companies which lead me to development. I decided to attend
+                  Lambda School late 2019 ( an intensive 9 month development
+                  school) where I focused on full stack web development. Over
+                  the course of the last year I have worked on remote cross
+                  functional teams that prepared me to be a vital piece of a
+                  development team. I can not wait to see what is next and am
+                  welcoming all opportunities!
                 </Text>
                 <Text mb={5} textAlign='center'>
-                  Tree trunks grow however makes them happy. They say everything
-                  looks better with odd numbers of things. But sometimes I put
-                  even numbers—just to upset the critics. This present moment is
-                  perfect simply due to the fact you're experiencing it. Isn't
-                  that fantastic? You can just push a little tree out of your
-                  brush like that. This is unplanned it really just happens.
-                  Making all those little fluffies that live in the clouds.
-                  Let's go up in here, and start having some fun All you have to
-                  learn here is how to have fun. Only God can make a tree - but
-                  you can paint one. A tree needs to be your friend if you're
-                  going to paint him.
-                </Text>
-                <Text mb={5} textAlign='center'>
-                  This is unplanned it really just happens. Making all those
-                  little fluffies that live in the clouds. Let's go up in here,
-                  and start having some fun All you have to learn here is how to
-                  have fun. Only God can make a tree - but you can paint one. A
-                  tree needs to be your friend if you're going to paint him.
+                  Bob Ross once said - "I believe talent is just a pursued
+                  interest." I have worn multiple hats over my professional
+                  career but I have finally found my 'thing'. Development is a
+                  way for me to let my creative side loose while simultaneously
+                  making the world a 'better' place one app at a time.
                 </Text>
               </Flex>
             </Flex>
