@@ -22,8 +22,7 @@ a:hover {
   color: black;
 }
 
-/* THE MAINCONTAINER HOLDS EVERYTHING */
-.maincontainer {
+THE MAINCONTAINER HOLDS EVERYTHING .maincontainer {
   position: absolute;
   width: 250px;
   height: 320px;
@@ -83,10 +82,14 @@ a:hover {
 }
 
 .table {
-  /* -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.54); */
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.54);
   background-color: #f8f8ff;
+}
+
+.projects {
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.54);
 }
 
 /* SNAKE GAME */
