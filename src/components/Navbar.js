@@ -46,7 +46,7 @@ export const Navbar = () => {
           </Text>
         </Flex>
         <Flex w={{ base: '25%', md: '50%' }} pr='10px' justify='flex-end'>
-          {window.innerWidth < 900 ? (
+          <Flex display={{ base: 'flex', lg: 'none' }}>
             <Menu>
               <MenuButton as={FiMenu} size='40px' />
               <MenuList>
@@ -58,16 +58,20 @@ export const Navbar = () => {
                 </MenuGroup>
               </MenuList>
             </Menu>
-          ) : (
-            <Flex justify='space-between' w='50%'>
-              <a href='#aboutme'> About Me </a>
-              <a href='#projects'> Projects </a>
-              <a href='#resume' onClick={() => setIsOpen(true)}>
-                Resume
-              </a>
-              <a href='mailto:smcguire1826@gmail.com'> Contact </a>
-            </Flex>
-          )}
+          </Flex>
+
+          <Flex
+            w={{ md: '80%', lg: '70%' }}
+            display={{ base: 'none', lg: 'flex' }}
+            justify='space-between'
+          >
+            <a href='#aboutme'> About Me </a>
+            <a href='#projects'> Projects </a>
+            <a href='#resume' onClick={() => setIsOpen(true)}>
+              Resume
+            </a>
+            <a href='mailto:smcguire1826@gmail.com'> Contact </a>
+          </Flex>
         </Flex>
         {/* RESUME DOWNLOAD MODAL */}
         <>
