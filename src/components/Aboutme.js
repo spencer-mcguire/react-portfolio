@@ -39,7 +39,7 @@ export const Aboutme = () => {
 
             <Flex w='100%' h='auto'>
               <Image
-                mb='-15.85rem'
+                mb='-15.45rem'
                 p='0%'
                 src={Aboutimg}
                 size='900px'

@@ -79,7 +79,7 @@ export const Landing = () => {
           </Flex>
           {/* IMG CONTAINER */}
           <Flex w='50%' justify='center'>
-            <Image src={DevImg} alt='Developer illustration ' size='1000px' />
+            <Image src={DevImg} alt='Developer illustration ' size='90%' />
           </Flex>
         </Flex>
         {/* BOTTOM CONTAINER */}
