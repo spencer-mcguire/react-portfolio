@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aboutimg from '../JavaScript frameworks-pana.svg';
+import Aboutimg from '../img/JavaScript frameworks.jpg';
 import { Flex, Image, Text } from '@chakra-ui/core';
 
 export const Aboutme = () => {
@@ -12,25 +12,33 @@ export const Aboutme = () => {
         flexDir='column'
         align='center'
         borderBottom='1px solid #E6ECF8'
-        p='30px'
+        // p='30px'
       >
         <Flex maxW='1920px' w='100%' h='100%' flexDir='column'>
           {/* content container */}
-          <Flex mt='650px' flexDir='column'>
+          <Flex mt={{ base: '900px', md: '650px' }} flexDir='column'>
             <Flex justify='center' id='aboutme'>
               <Flex
                 // h='300px'
                 maxW='875px'
-                zIndex='11'
                 flexDir='column'
                 justify='center'
                 align='center'
-                mb='-15rem'
+                // mb='-15rem'
               >
-                <Text fontSize='6xl' fontWeight='bold' zIndex='99' mb='30px'>
+                <Text
+                  fontSize={{ base: '45px', md: '55px', lg: '6xl' }}
+                  fontWeight='bold'
+                  mb='30px'
+                >
                   about me
                 </Text>
-                <Text textAlign='center' fontSize='3xl' color='grey'>
+                <Text
+                  textAlign='center'
+                  fontSize={{ base: 'lg', lg: '3xl' }}
+                  w={{ base: '80%' }}
+                  color='grey'
+                >
                   "Imagination is more important than knowledge. Knowledge is
                   limited. Imagination encircles the world." - Albert Einstein
                 </Text>
@@ -39,20 +47,20 @@ export const Aboutme = () => {
 
             <Flex w='100%' h='auto'>
               <Image
-                mb='-15.45rem'
-                p='0%'
+                // mb='-15.45rem'
+                display={{ base: 'none', lg: 'show' }}
                 src={Aboutimg}
-                size='900px'
+                size='600px'
                 zIndex='-1'
               />
               {/* Text container */}
               <Flex
-                w='50%'
-                mt='15rem'
+                w={{ base: '100%', lg: '50%' }}
+                mt={{ base: '3rem', lg: '15rem' }}
                 flexDir='column'
                 align='center'
                 justify='center'
-                px='5rem'
+                px={{ base: '20px', lg: '5rem' }}
               >
                 <Text mb={5} textAlign='center'>
                   I am a Full Stack Developer specializing in React, JavaScript
