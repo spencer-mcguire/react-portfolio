@@ -19,6 +19,11 @@ import {
   List,
   ListIcon,
   ListItem,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from '@chakra-ui/core';
 
 export const Landing = () => {
@@ -42,13 +47,22 @@ export const Landing = () => {
       >
         {/* TOP CONTAINER */}
         <Flex maxW='1920px' w='100%' h='60%'>
-          <Flex w='50%' justify='center'>
+          <Flex w={{ base: '100%', lg: '50%' }} justify='center'>
             <Flex flexDir='column' justify='center'>
-              <Text fontWeight='bolder' fontSize='70px'>
+              <Text
+                fontWeight='bolder'
+                fontSize={{ base: '45px', md: '55px', lg: '70px' }}
+              >
                 I'm a Full Stack <br></br> Web Developer
               </Text>
               {/* SOCIAL CONTAINER */}
-              <Flex w='30%' justify='space-around' mb='6%'>
+              <Flex
+                w={{ base: '100%', md: '30%' }}
+                justify='space-around'
+                px={{ base: '40px', md: '0px' }}
+                pt={{ base: '20px', md: '0px' }}
+                mb='6%'
+              >
                 <Link href='https://github.com/spencer-mcguire' isExternal>
                   <Box as={AiFillGithub} size='30px' color='grey' />
                 </Link>
@@ -63,7 +77,7 @@ export const Landing = () => {
                 </Link>
               </Flex>
               {/* BUTTON CONTAINER */}
-              <Flex>
+              <Flex w='100%' justify={{ base: 'center', md: 'flex-start' }}>
                 <Button
                   p='25px'
                   background='#2fcc76'
@@ -78,15 +92,19 @@ export const Landing = () => {
             </Flex>
           </Flex>
           {/* IMG CONTAINER */}
-          <Flex w='50%' justify='center'>
+          <Flex
+            w={{ base: '1%', md: '50%' }}
+            display={{ base: 'none', lg: 'flex' }}
+            justify='center'
+          >
             <Image src={DevImg} alt='Developer illustration ' size='90%' />
           </Flex>
         </Flex>
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h='30%'
-          mb='5%'
+          h={{ base: '35%', lg: '30%' }}
+          mb={{ base: '1%', md: '5%' }}
           background='rgba(255,35,60, 0.9)'
           justify='center'
           align='center'
@@ -96,12 +114,16 @@ export const Landing = () => {
             w='100%'
             h='80%'
             maxW='1000px'
-            padding='2%'
+            padding={{ base: '6%', md: '2%' }}
             align='center'
             justify='center'
             flexDir='column'
           >
-            <Text fontSize='5xl' color='white' mb='30px'>
+            <Text
+              fontSize={{ base: '2xl', lg: '5xl' }}
+              color='white'
+              mb={{ base: '10px', lg: '30px' }}
+            >
               Hey, I'm Spencer. Nice to meet you.
             </Text>
             <Text fontSize='lg' color='white' textAlign='center'>
@@ -123,6 +145,7 @@ export const Landing = () => {
             {/* MAIN TABLE */}
             <Flex
               className='table'
+              display={{ base: 'none' }}
               h='850px'
               w='65rem'
               border='1px solid #E6ECF8'
@@ -365,6 +388,22 @@ export const Landing = () => {
                 </List>
               </Flex>
             </Flex>
+            {/* END BIG TABLE */}
+            <Tabs isFitted variant='enclosed'>
+              <TabList mb='1em'>
+                <Tab>Front-end Developer</Tab>
+                <Tab>What Makes Me Different</Tab>
+                <Tab>Back-end Developer</Tab>
+              </TabList>
+              <TabPanels>
+                <TabPanel>
+                  <p>one!</p>
+                </TabPanel>
+                <TabPanel>
+                  <p>two!</p>
+                </TabPanel>
+              </TabPanels>
+            </Tabs>
           </Flex>
         </Flex>
       </Flex>
