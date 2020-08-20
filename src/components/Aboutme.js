@@ -27,7 +27,7 @@ export const Aboutme = () => {
                 // mb='-15rem'
               >
                 <Text
-                  fontSize={{ base: '45px', md: '55px', lg: '6xl' }}
+                  fontSize={{ base: '35px', md: '55px', lg: '6xl' }}
                   fontWeight='bold'
                   mb='30px'
                 >
