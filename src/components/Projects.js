@@ -15,7 +15,7 @@ export const Projects = () => {
         justify='center'
         align='center'
         pt={{ base: '0px', lg: '200px' }}
-        mb='15rem'
+        mb={{ base: '4rem', lg: '15rem' }}
       >
         <Flex maxW='1920px' w='100%' flexDir='column'>
           {/* Project Header */}
