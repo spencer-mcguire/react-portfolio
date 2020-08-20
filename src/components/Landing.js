@@ -415,7 +415,7 @@ export const Landing = () => {
                   <Tab
                     bg='white'
                     border='none'
-                    borderBottom='1px solid grey'
+                    borderBottom='1px solid #E6ECF8'
                     _selected={{ color: 'white', bg: '#2fcc76' }}
                   >
                     Front-end Developer
@@ -423,8 +423,8 @@ export const Landing = () => {
                   <Tab
                     bg='white'
                     border='none'
-                    borderBottom='1px solid grey'
-                    borderX='1px solid grey'
+                    borderBottom='1px solid #E6ECF8'
+                    borderX='1px solid #E6ECF8'
                     _selected={{ color: 'white', bg: '#2fcc76' }}
                   >
                     What Makes Me Different
@@ -432,14 +432,14 @@ export const Landing = () => {
                   <Tab
                     bg='white'
                     border='none'
-                    borderBottom='1px solid grey'
+                    borderBottom='1px solid #E6ECF8'
                     _selected={{ color: 'white', bg: '#2fcc76' }}
                   >
                     Back-end Developer
                   </Tab>
                 </TabList>
                 <TabPanels>
-                  <TabPanel>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
                     <Flex w='100%' p='1rem' flexDir='column' align='center'>
                       <Box
                         as={AiOutlineComment}
@@ -525,7 +525,7 @@ export const Landing = () => {
                       </List>
                     </Flex>
                   </TabPanel>
-                  <TabPanel>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
                     <Flex
                       w='100%'
                       p='1rem'
@@ -617,7 +617,7 @@ export const Landing = () => {
                       </List>
                     </Flex>
                   </TabPanel>
-                  <TabPanel>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
                     <Flex w='100%' p='1rem' flexDir='column' align='center'>
                       <Box
                         as={BsCodeSlash}
