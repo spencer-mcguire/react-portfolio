@@ -103,8 +103,9 @@ export const Landing = () => {
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h={{ base: '35%', lg: '30%' }}
+          h={{ base: '50%', lg: '30%' }}
           mb={{ base: '1%', md: '5%' }}
+          py='6%'
           background='rgba(255,35,60, 0.9)'
           justify='center'
           align='center'
@@ -114,7 +115,7 @@ export const Landing = () => {
             w='100%'
             h='80%'
             maxW='1000px'
-            padding={{ base: '6%', md: '2%' }}
+            padding={{ base: '2%', md: '2%' }}
             align='center'
             justify='center'
             flexDir='column'
@@ -123,6 +124,7 @@ export const Landing = () => {
               fontSize={{ base: '2xl', lg: '5xl' }}
               color='white'
               mb={{ base: '10px', lg: '30px' }}
+              w={{ base: '60%' }}
             >
               Hey, I'm Spencer. Nice to meet you.
             </Text>
@@ -389,21 +391,307 @@ export const Landing = () => {
               </Flex>
             </Flex>
             {/* END BIG TABLE */}
-            <Tabs isFitted variant='enclosed'>
-              <TabList mb='1em'>
-                <Tab>Front-end Developer</Tab>
-                <Tab>What Makes Me Different</Tab>
-                <Tab>Back-end Developer</Tab>
-              </TabList>
-              <TabPanels>
-                <TabPanel>
-                  <p>one!</p>
-                </TabPanel>
-                <TabPanel>
-                  <p>two!</p>
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
+
+            {/*  */}
+            {/* MOBILE TABLE */}
+            <Flex w='100%'>
+              <Tabs variant='unstyled' mt='3rem'>
+                <TabList mb='1em'>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid grey'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    Front-end Developer
+                  </Tab>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid grey'
+                    borderX='1px solid grey'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    What Makes Me Different
+                  </Tab>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid grey'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    Back-end Developer
+                  </Tab>
+                </TabList>
+                <TabPanels>
+                  <TabPanel>
+                    <Flex w='100%' p='1rem' flexDir='column' align='center'>
+                      <Box
+                        as={AiOutlineComment}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        Front-end Developer
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        I deeply enjoy crafting clean and more importantly
+                        usable Front-ends from idea to production.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Languages I speak:
+                      </Text>
+                      <Text mb='50px'> JavaScript, HTML, CSS, Less </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Frameworks and tools:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          React.js
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Redux
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Chakra UI
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Tailwind CSS
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Material UI
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Github
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Cypress.io
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                  <TabPanel>
+                    <Flex
+                      w='100%'
+                      p='1rem'
+                      flexDir='column'
+                      align='center'
+                      borderX='1px solid #E6ECF8'
+                    >
+                      <Box
+                        as={IoIosBarcode}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        What makes me different?
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        My biggest weakness is I refuse to be stagnant. I am
+                        determined to continue learning and shaping my craft.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Soft Skills:
+                      </Text>
+                      <Text mb='50px'> Conflict Resolution, Self Starter </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        More Skills:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Attention to detail
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          NPM
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Test-Driven-Development
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Unit Testing
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          VS Code
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Heroku
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Customer Service
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                  <TabPanel>
+                    <Flex w='100%' p='1rem' flexDir='column' align='center'>
+                      <Box
+                        as={BsCodeSlash}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        Back-end Developer
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        Any Front-end would be lost without a solid and secure
+                        Back-end. I love taking on edge case problem and solving
+                        them with BigO in mind.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Languages I speak:
+                      </Text>
+                      <Text mb='50px'> JavaScript, Python </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Frameworks and tools:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          NodeJS
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Express
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Knex
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          MongoDB (learning)
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Authentication
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          PostgreSQL
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          SQLite
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
