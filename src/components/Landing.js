@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import DevImg from '../img/Developer activity-bro.svg';
 import {
@@ -19,15 +19,35 @@ import {
   List,
   ListIcon,
   ListItem,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  useToast,
 } from '@chakra-ui/core';
 
 export const Landing = () => {
+  const toast = useToast();
   // function to scroll to about me section
   const scrollToAbout = () => {
     document.getElementById('aboutme').scrollIntoView({
       behavior: 'smooth',
     });
   };
+
+  // Loading toast
+  useEffect(() => {
+    toast({
+      position: 'top',
+      title: 'Welcome to my portfolio!',
+      description:
+        'This page is in active development. Check back for new changes and functionality!',
+      status: 'info',
+      duration: 9000,
+      isClosable: true,
+    });
+  }, [toast]);
 
   return (
     <div>
@@ -42,13 +62,22 @@ export const Landing = () => {
       >
         {/* TOP CONTAINER */}
         <Flex maxW='1920px' w='100%' h='60%'>
-          <Flex w='50%' justify='center'>
+          <Flex w={{ base: '100%', lg: '50%' }} justify='center'>
             <Flex flexDir='column' justify='center'>
-              <Text fontWeight='bolder' fontSize='70px'>
+              <Text
+                fontWeight='bolder'
+                fontSize={{ base: '45px', md: '55px', lg: '70px' }}
+              >
                 I'm a Full Stack <br></br> Web Developer
               </Text>
               {/* SOCIAL CONTAINER */}
-              <Flex w='30%' justify='space-around' mb='6%'>
+              <Flex
+                w={{ base: '100%', md: '30%' }}
+                justify='space-around'
+                px={{ base: '40px', md: '0px' }}
+                pt={{ base: '20px', md: '0px' }}
+                mb='6%'
+              >
                 <Link href='https://github.com/spencer-mcguire' isExternal>
                   <Box as={AiFillGithub} size='30px' color='grey' />
                 </Link>
@@ -63,7 +92,7 @@ export const Landing = () => {
                 </Link>
               </Flex>
               {/* BUTTON CONTAINER */}
-              <Flex>
+              <Flex w='100%' justify={{ base: 'center', md: 'flex-start' }}>
                 <Button
                   p='25px'
                   background='#2fcc76'
@@ -78,15 +107,20 @@ export const Landing = () => {
             </Flex>
           </Flex>
           {/* IMG CONTAINER */}
-          <Flex w='50%' justify='center'>
+          <Flex
+            w={{ base: '1%', md: '50%' }}
+            display={{ base: 'none', lg: 'flex' }}
+            justify='center'
+          >
             <Image src={DevImg} alt='Developer illustration ' size='90%' />
           </Flex>
         </Flex>
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h='30%'
-          mb='5%'
+          h={{ base: '50%', lg: '30%' }}
+          mb={{ base: '1%', md: '5%' }}
+          py='6%'
           background='rgba(255,35,60, 0.9)'
           justify='center'
           align='center'
@@ -96,12 +130,17 @@ export const Landing = () => {
             w='100%'
             h='80%'
             maxW='1000px'
-            padding='2%'
+            padding={{ base: '2%', md: '2%' }}
             align='center'
             justify='center'
             flexDir='column'
           >
-            <Text fontSize='5xl' color='white' mb='30px'>
+            <Text
+              fontSize={{ base: '2xl', lg: '5xl' }}
+              color='white'
+              mb={{ base: '10px', lg: '30px' }}
+              w={{ base: '60%' }}
+            >
               Hey, I'm Spencer. Nice to meet you.
             </Text>
             <Text fontSize='lg' color='white' textAlign='center'>
@@ -123,6 +162,7 @@ export const Landing = () => {
             {/* MAIN TABLE */}
             <Flex
               className='table'
+              display={{ base: 'none' }}
               h='850px'
               w='65rem'
               border='1px solid #E6ECF8'
@@ -364,6 +404,308 @@ export const Landing = () => {
                   </ListItem>
                 </List>
               </Flex>
+            </Flex>
+            {/* END BIG TABLE */}
+
+            {/*  */}
+            {/* MOBILE TABLE */}
+            <Flex w='100%'>
+              <Tabs variant='unstyled' mt='3rem'>
+                <TabList mb='1em'>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid #E6ECF8'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    Front-end Developer
+                  </Tab>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid #E6ECF8'
+                    borderX='1px solid #E6ECF8'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    What Makes Me Different
+                  </Tab>
+                  <Tab
+                    bg='white'
+                    border='none'
+                    borderBottom='1px solid #E6ECF8'
+                    _selected={{ color: 'white', bg: '#2fcc76' }}
+                  >
+                    Back-end Developer
+                  </Tab>
+                </TabList>
+                <TabPanels>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
+                    <Flex w='100%' p='1rem' flexDir='column' align='center'>
+                      <Box
+                        as={AiOutlineComment}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        Front-end Developer
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        I deeply enjoy crafting clean and more importantly
+                        usable Front-ends from idea to production.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Languages I speak:
+                      </Text>
+                      <Text mb='50px'> JavaScript, HTML, CSS, Less </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Frameworks and tools:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          React.js
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Redux
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Chakra UI
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Tailwind CSS
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Material UI
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Github
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Cypress.io
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
+                    <Flex
+                      w='100%'
+                      p='1rem'
+                      flexDir='column'
+                      align='center'
+                      borderX='1px solid #E6ECF8'
+                    >
+                      <Box
+                        as={IoIosBarcode}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        What makes me different?
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        My biggest weakness is I refuse to be stagnant. I am
+                        determined to continue learning and shaping my craft.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Soft Skills:
+                      </Text>
+                      <Text mb='50px'> Conflict Resolution, Self Starter </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        More Skills:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Attention to detail
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          NPM
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Test-Driven-Development
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Unit Testing
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          VS Code
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Heroku
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Customer Service
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                  <TabPanel pb='40px' borderBottom='1px solid #E6ECF8'>
+                    <Flex w='100%' p='1rem' flexDir='column' align='center'>
+                      <Box
+                        as={BsCodeSlash}
+                        size='70px'
+                        mb='30px'
+                        mt='30px'
+                        color='#2fcc76'
+                      />
+                      <Text fontSize='2xl' mb='30px'>
+                        Back-end Developer
+                      </Text>
+                      <Text h='100px' mb='50px' textAlign='center'>
+                        Any Front-end would be lost without a solid and secure
+                        Back-end. I love taking on edge case problem and solving
+                        them with BigO in mind.
+                      </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Languages I speak:
+                      </Text>
+                      <Text mb='50px'> JavaScript, Python </Text>
+                      <Text
+                        mb='20px'
+                        fontSize='xl'
+                        fontWeight='bold'
+                        color='#2fcc76'
+                      >
+                        Frameworks and tools:
+                      </Text>
+                      <List spacing={3}>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          NodeJS
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Express
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Knex
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          MongoDB (learning)
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Authentication
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          PostgreSQL
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          SQLite
+                        </ListItem>
+                      </List>
+                    </Flex>
+                  </TabPanel>
+                </TabPanels>
+              </Tabs>
             </Flex>
           </Flex>
         </Flex>

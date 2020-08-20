@@ -13,7 +13,14 @@ import {
   AlertDialogFooter,
   Button,
   Link,
+  Text,
+  Menu,
+  MenuList,
+  MenuGroup,
+  MenuItem,
+  MenuButton,
 } from '@chakra-ui/core';
+import { FiMenu } from 'react-icons/fi';
 
 export const Navbar = () => {
   // Resume Download Modal
@@ -25,15 +32,42 @@ export const Navbar = () => {
     // Main nav container
     <Flex className='Navbar' w='100%' justify='center' align='center'>
       <Flex w='100%' maxW='1920px' mx='1%' align='center'>
-        <Flex w='50%' align='center'>
-          <Image src={ProfileLogo} size='100px' mx='20px' />
-          <h1>SPENCER MCGUIRE</h1>
+        <Flex w={{ base: '75%', md: '50%' }} align='center'>
+          <Image
+            src={ProfileLogo}
+            size={{ base: '75px', md: '75px', lg: '100px' }}
+            mx='20px'
+          />
+          <Text
+            fontSize={{ base: 'md', md: 'xl', lg: '3xl' }}
+            fontWeight='bold'
+          >
+            SPENCER MCGUIRE
+          </Text>
         </Flex>
-        <Flex w='50%' justify='flex-end'>
-          <Flex justify='space-between' w='50%'>
+        <Flex w={{ base: '25%', md: '50%' }} pr='10px' justify='flex-end'>
+          <Flex display={{ base: 'flex', lg: 'none' }}>
+            <Menu>
+              <MenuButton as={FiMenu} size='40px' />
+              <MenuList>
+                <MenuGroup title='Welcome!'>
+                  <MenuItem href='#aboutme'> about me </MenuItem>
+                  <MenuItem> projects </MenuItem>
+                  <MenuItem> resume </MenuItem>
+                  <MenuItem> contact </MenuItem>
+                </MenuGroup>
+              </MenuList>
+            </Menu>
+          </Flex>
+
+          <Flex
+            w={{ md: '80%', lg: '70%' }}
+            display={{ base: 'none', lg: 'flex' }}
+            justify='space-between'
+          >
             <a href='#aboutme'> About Me </a>
             <a href='#projects'> Projects </a>
-            <a href='#' onClick={() => setIsOpen(true)}>
+            <a href='#resume' onClick={() => setIsOpen(true)}>
               Resume
             </a>
             <a href='mailto:smcguire1826@gmail.com'> Contact </a>
