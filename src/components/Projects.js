@@ -11,20 +11,31 @@ import ComingSoon from '../img/ComingSoon.jpg';
 export const Projects = () => {
   return (
     <section id='projects'>
-      <Flex justify='center' align='center' pt='200px' mb='15rem'>
+      <Flex
+        justify='center'
+        align='center'
+        pt={{ base: '0px', lg: '200px' }}
+        mb='15rem'
+      >
         <Flex maxW='1920px' w='100%' flexDir='column'>
           {/* Project Header */}
           <Flex justify='center' align='center' flexDir='column' pb='80px'>
-            <Text fontSize='6xl' fontWeight='bold' p='35px'>
+            <Text
+              fontSize={{ base: '35px', md: '55px', lg: '6xl' }}
+              fontWeight='bold'
+              p='35px'
+            >
               recent projects
             </Text>
-            <Text textAlign='center'>
+            <Text textAlign='center' w={{ base: '90%' }}>
               Here are just a few of the projects I have worked on recently.
               Want to see more? Check out my
               <Link
                 href='https://github.com/spencer-mcguire'
                 color='#2fcc76'
+                fontWeight='bold'
                 isExternal
+                px='4px'
               >
                 github
               </Link>
@@ -32,19 +43,18 @@ export const Projects = () => {
             </Text>
           </Flex>
           {/* Projects container */}
-          <Stack
-            isInline
-            spacing={10}
+          <Flex
+            flexDir={{ base: 'column', lg: 'row' }}
             overflow='hidden'
             align='center'
             justify='center'
-            m='40px'
-            p='10px'
+            mb={{ lg: '40px' }}
           >
             <Image
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               alt='getbeluga.com'
               src={BelugaScreenshot}
@@ -53,6 +63,7 @@ export const Projects = () => {
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               src={InventoryApp}
               alt='Car dealer inventory App'
@@ -61,23 +72,24 @@ export const Projects = () => {
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               src={Allay}
               alt='Allay interview app'
             />
-          </Stack>
-          <Stack
-            isInline
-            spacing={10}
+          </Flex>
+          <Flex
+            // display={{ md: 'isInline' }}
+            flexDir={{ base: 'column', lg: 'row' }}
             overflow='hidden'
             align='center'
             justify='center'
-            p='10px'
           >
             <Image
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               src={CRA}
               alt='NPM Create React App Template'
@@ -86,6 +98,7 @@ export const Projects = () => {
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               src={ComingSoon}
               alt='Placeholder'
@@ -94,11 +107,12 @@ export const Projects = () => {
               className='projects'
               h='250px'
               w='400px'
+              m='2%'
               borderRadius='10px'
               src={Lendr}
               alt='Lendr App'
             />
-          </Stack>
+          </Flex>
         </Flex>
       </Flex>
     </section>
