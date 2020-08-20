@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import DevImg from '../img/Developer activity-bro.svg';
 import {
@@ -24,15 +24,30 @@ import {
   TabPanels,
   Tab,
   TabPanel,
+  useToast,
 } from '@chakra-ui/core';
 
 export const Landing = () => {
+  const toast = useToast();
   // function to scroll to about me section
   const scrollToAbout = () => {
     document.getElementById('aboutme').scrollIntoView({
       behavior: 'smooth',
     });
   };
+
+  // Loading toast
+  useEffect(() => {
+    toast({
+      position: 'top',
+      title: 'Welcome to my portfolio!',
+      description:
+        'This page is in active development. Check back for new changes and functionality!',
+      status: 'info',
+      duration: 9000,
+      isClosable: true,
+    });
+  }, [toast]);
 
   return (
     <div>
