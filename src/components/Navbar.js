@@ -2,6 +2,7 @@ import React from 'react';
 
 import myPDF from '../Spencer_McGuire_Resume.pdf';
 import ProfileLogo from '../img/profile_logo_200x200.png';
+import avatar from '../img/29.jpg';
 import {
   Flex,
   Image,
@@ -14,20 +15,32 @@ import {
   Button,
   Link,
   Text,
-  Menu,
-  MenuList,
-  MenuGroup,
-  MenuItem,
-  MenuButton,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  Box,
+  useDisclosure,
+  Avatar,
 } from '@chakra-ui/core';
 import { FiMenu } from 'react-icons/fi';
 
 export const Navbar = () => {
   // Resume Download Modal
-  const [isOpen, setIsOpen] = React.useState();
-  const onClose = () => setIsOpen(false);
+  const [open, setOpen] = React.useState();
+  const close = () => setOpen(false);
   const cancelRef = React.useRef();
 
+  // Drawr
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
+
+  function foo() {
+    window.open('mailto: smcguire' + '1826' + '@gmail.com');
+  }
   return (
     // Main nav container
     <Flex className='Navbar' w='100%' justify='center' align='center'>
@@ -46,19 +59,70 @@ export const Navbar = () => {
           </Text>
         </Flex>
         <Flex w={{ base: '25%', md: '50%' }} pr='10px' justify='flex-end'>
-          <Flex display={{ base: 'flex', lg: 'none' }}>
-            <Menu>
-              <MenuButton as={FiMenu} size='40px' />
-              <MenuList>
-                <MenuGroup title='Welcome!'>
-                  <MenuItem href='#aboutme'> about me </MenuItem>
-                  <MenuItem> projects </MenuItem>
-                  <MenuItem> resume </MenuItem>
-                  <MenuItem> contact </MenuItem>
-                </MenuGroup>
-              </MenuList>
-            </Menu>
-          </Flex>
+          <Button
+            display={{ base: 'flex', lg: 'none' }}
+            variantColor='#2fcc76'
+            variant='ghost'
+            border='none'
+            onClick={onOpen}
+          >
+            <Box as={FiMenu} color='black' size='30px' />
+          </Button>
+          <Drawer
+            isOpen={isOpen}
+            placement='right'
+            onClose={onClose}
+            finalFocusRef={btnRef}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerHeader textAlign='center'>Welcome!</DrawerHeader>
+
+              <DrawerBody justify='center'>
+                <Flex flexDir='column' justify='center' align='center'>
+                  <Avatar name='fake avatar' src={avatar} size='xl' />
+                  <Link
+                    href='#aboutme'
+                    p='4%'
+                    borderBottom='1px solid #2fcc76'
+                    textDecor='none'
+                    onClick={onClose}
+                  >
+                    about me
+                  </Link>
+                  <Link
+                    href='#projects'
+                    p='4%'
+                    borderBottom=' 1px solid rgba(255,35,60, 0.9)'
+                    onClick={onClose}
+                  >
+                    projects
+                  </Link>
+                  <Link
+                    href='#resume'
+                    onClick={() => {
+                      setOpen(true);
+                      onClose();
+                    }}
+                    p='4%'
+                    borderBottom=' 1px solid rgba(255,35,60, 0.9)'
+                  >
+                    resume
+                  </Link>
+                  <Link
+                    href='mailto:smcguire1826@gmail.com'
+                    p='4%'
+                    borderBottom='1px solid #2fcc76'
+                    onClick={onClose}
+                  >
+                    contact
+                  </Link>
+                </Flex>
+              </DrawerBody>
+
+              <DrawerFooter></DrawerFooter>
+            </DrawerContent>
+          </Drawer>
 
           <Flex
             w={{ md: '80%', lg: '70%' }}
@@ -67,7 +131,7 @@ export const Navbar = () => {
           >
             <a href='#aboutme'> About Me </a>
             <a href='#projects'> Projects </a>
-            <a href='#resume' onClick={() => setIsOpen(true)}>
+            <a href='#resume' onClick={() => setOpen(true)}>
               Resume
             </a>
             <a href='mailto:smcguire1826@gmail.com'> Contact </a>
@@ -76,9 +140,9 @@ export const Navbar = () => {
         {/* RESUME DOWNLOAD MODAL */}
         <>
           <AlertDialog
-            isOpen={isOpen}
+            isOpen={open}
             leastDestructiveRef={cancelRef}
-            onClose={onClose}
+            onClose={close}
           >
             <AlertDialogOverlay />
             <AlertDialogContent>
@@ -93,11 +157,7 @@ export const Navbar = () => {
 
               <AlertDialogFooter>
                 <a href={myPDF} download='Spencer_McGuire_Resume.pdf'>
-                  <Button
-                    variantColor='green'
-                    ref={cancelRef}
-                    onClick={onClose}
-                  >
+                  <Button variantColor='green' ref={cancelRef} onClick={close}>
                     Download
                   </Button>
                 </a>
@@ -106,7 +166,7 @@ export const Navbar = () => {
                   href='https://resume.creddle.io/resume/fzh9z72jc9n'
                   isExternal
                 >
-                  <Button variantColor='red' onClick={onClose} ml={3}>
+                  <Button variantColor='red' onClick={close} ml={3}>
                     View
                   </Button>
                 </Link>
