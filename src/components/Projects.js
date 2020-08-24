@@ -50,37 +50,46 @@ export const Projects = () => {
             justify='center'
             mb={{ lg: '40px' }}
           >
-            <Link href='https://www.getbeluga.com' isExternal>
+            <Link
+              href='https://www.getbeluga.com'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
               <Image
                 className='projects'
                 h='250px'
                 w='400px'
-                my='2%'
-                mx={{ base: '0%', md: '2%' }}
                 borderRadius='10px'
                 alt='getbeluga.com'
                 src={BelugaScreenshot}
               />
             </Link>
-            <Link href='https://webdb-ii-app-127edu9m1.now.sh/' isExternal>
+            <Link
+              href='https://webdb-ii-app-127edu9m1.now.sh/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
               <Image
                 className='projects'
                 h='250px'
                 w='400px'
-                my='2%'
-                mx={{ base: '0%', md: '2%' }}
                 borderRadius='10px'
                 src={InventoryApp}
                 alt='Car dealer inventory App'
               />
             </Link>
-            <Link href='http://labs21-allay-fe.herokuapp.com/' isExternal>
+            <Link
+              href='http://labs21-allay-fe.herokuapp.com/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
               <Image
                 className='projects'
                 h='250px'
                 w='400px'
-                my='2%'
-                mx={{ base: '0%', md: '2%' }}
                 borderRadius='10px'
                 src={Allay}
                 alt='Allay interview app'
@@ -96,35 +105,38 @@ export const Projects = () => {
             <Link
               href='https://www.npmjs.com/package/cra-template-reduxstarter'
               isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
             >
               <Image
                 className='projects'
                 h='250px'
                 w='400px'
-                my='2%'
-                mx={{ base: '0%', md: '2%' }}
                 borderRadius='10px'
                 src={CRA}
                 alt='NPM Create React App Template'
               />
             </Link>
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              my='2%'
-              mx={{ base: '0%', md: '2%' }}
-              borderRadius='10px'
-              src={ComingSoon}
-              alt='Placeholder'
-            />
-            <Link href='https://frontend-qhy1sab1y.now.sh/' isExternal>
+            <Link my='2%' mx={{ base: '0%', md: '2%' }}>
               <Image
                 className='projects'
                 h='250px'
                 w='400px'
-                my='2%'
-                mx={{ base: '0%', md: '2%' }}
+                borderRadius='10px'
+                src={ComingSoon}
+                alt='Placeholder'
+              />
+            </Link>
+            <Link
+              href='https://frontend-qhy1sab1y.now.sh/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
                 borderRadius='10px'
                 src={Lendr}
                 alt='Lendr App'
