@@ -15,7 +15,7 @@ export const Footer = () => {
     <footer>
       {/* MAIN */}
       <Flex
-        h='25rem'
+        h='20rem'
         background='rgba(255,35,60, 0.9)'
         align='center'
         justify='center'
@@ -31,7 +31,7 @@ export const Footer = () => {
         >
           {/* CONTENT CONTAINER */}
           <Flex h='125px' w='100%' justify='center' align='center'>
-            <Image src={footLogo} size='125px' />
+            <Image src={footLogo} size='100px' />
           </Flex>
 
           {/* SOCIAL CONTAINER */}
@@ -39,19 +39,19 @@ export const Footer = () => {
             <Link href='https://github.com/spencer-mcguire' isExternal>
               <Box
                 as={GoMarkGithub}
-                size='50px'
+                size='40px'
                 color='white'
                 href='https://github.com/spencer-mcguire'
               />
             </Link>
             <Link href='mailto:smcguire1826@gmail.com' isExternal>
-              <Box as={MdMailOutline} size='50px' color='white' />
+              <Box as={MdMailOutline} size='45px' color='white' />
             </Link>
             <Link
               href='https://www.linkedin.com/in/spencer-mcguire/'
               isExternal
             >
-              <Box as={AiOutlineLinkedin} size='60px' color='white' />
+              <Box as={AiOutlineLinkedin} size='40px' color='white' />
             </Link>
           </Flex>
 
