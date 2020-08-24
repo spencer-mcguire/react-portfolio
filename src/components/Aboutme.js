@@ -16,7 +16,10 @@ export const Aboutme = () => {
       >
         <Flex maxW='1920px' w='100%' h='100%' flexDir='column'>
           {/* content container */}
-          <Flex mt={{ base: '225%', md: '650px' }} flexDir='column'>
+          <Flex
+            mt={{ base: '225%', md: '800px', lg: '850px' }}
+            flexDir='column'
+          >
             <Flex justify='center' id='aboutme'>
               <Flex
                 // h='300px'
@@ -50,8 +53,8 @@ export const Aboutme = () => {
                 display={{ base: 'none', md: 'flex' }}
                 m='2%'
                 src={Aboutimg}
-                w={{ md: '400px', lg: '600px' }}
-                h={{ md: '300px', lg: '500px' }}
+                w={{ md: '400px', lg: '500px' }}
+                h={{ md: '300px', lg: '400px' }}
                 zIndex='-1'
               />
               {/* Text container */}
