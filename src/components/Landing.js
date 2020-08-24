@@ -66,7 +66,7 @@ export const Landing = () => {
             <Flex flexDir='column' justify='center'>
               <Text
                 fontWeight='bolder'
-                fontSize={{ base: '45px', md: '55px', lg: '70px' }}
+                fontSize={{ base: '45px', md: '55px', lg: '5xl' }}
               >
                 I'm a Full Stack <br></br> Web Developer
               </Text>
