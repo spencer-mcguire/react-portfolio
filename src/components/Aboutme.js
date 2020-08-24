@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aboutimg from '../img/JavaScript frameworks.jpg';
+import Aboutimg from '../img/Product tour-cuate2.png';
 import { Flex, Image, Text } from '@chakra-ui/core';
 
 export const Aboutme = () => {
@@ -16,7 +16,7 @@ export const Aboutme = () => {
       >
         <Flex maxW='1920px' w='100%' h='100%' flexDir='column'>
           {/* content container */}
-          <Flex mt={{ base: '900px', md: '650px' }} flexDir='column'>
+          <Flex mt={{ base: '225%', md: '650px' }} flexDir='column'>
             <Flex justify='center' id='aboutme'>
               <Flex
                 // h='300px'
@@ -45,18 +45,19 @@ export const Aboutme = () => {
               </Flex>
             </Flex>
 
-            <Flex w='100%' h='auto'>
+            <Flex w='100%' h='auto' align='center' justify='center'>
               <Image
-                // mb='-15.45rem'
-                display={{ base: 'none', lg: 'show' }}
+                display={{ base: 'none', md: 'flex' }}
+                m='2%'
                 src={Aboutimg}
-                size='600px'
+                w={{ md: '400px', lg: '600px' }}
+                h={{ md: '300px', lg: '500px' }}
                 zIndex='-1'
               />
               {/* Text container */}
               <Flex
                 w={{ base: '100%', lg: '50%' }}
-                mt={{ base: '3rem', lg: '15rem' }}
+                mt={{ base: '3rem', lg: '1rem' }}
                 flexDir='column'
                 align='center'
                 justify='center'

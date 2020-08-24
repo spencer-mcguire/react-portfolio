@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Flex, Text, Link, Image, Stack } from '@chakra-ui/core';
+import { Flex, Text, Link, Image } from '@chakra-ui/core';
 import BelugaScreenshot from '../img/beluga.PNG';
 import InventoryApp from '../img/InventoryApp.PNG';
 import Allay from '../img/Allay.png';
@@ -50,68 +50,98 @@ export const Projects = () => {
             justify='center'
             mb={{ lg: '40px' }}
           >
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              alt='getbeluga.com'
-              src={BelugaScreenshot}
-            />
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              src={InventoryApp}
-              alt='Car dealer inventory App'
-            />
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              src={Allay}
-              alt='Allay interview app'
-            />
+            <Link
+              href='https://www.getbeluga.com'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                alt='getbeluga.com'
+                src={BelugaScreenshot}
+              />
+            </Link>
+            <Link
+              href='https://webdb-ii-app-127edu9m1.now.sh/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                src={InventoryApp}
+                alt='Car dealer inventory App'
+              />
+            </Link>
+            <Link
+              href='http://labs21-allay-fe.herokuapp.com/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                src={Allay}
+                alt='Allay interview app'
+              />
+            </Link>
           </Flex>
           <Flex
-            // display={{ md: 'isInline' }}
             flexDir={{ base: 'column', lg: 'row' }}
             overflow='hidden'
             align='center'
             justify='center'
           >
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              src={CRA}
-              alt='NPM Create React App Template'
-            />
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              src={ComingSoon}
-              alt='Placeholder'
-            />
-            <Image
-              className='projects'
-              h='250px'
-              w='400px'
-              m='2%'
-              borderRadius='10px'
-              src={Lendr}
-              alt='Lendr App'
-            />
+            <Link
+              href='https://www.npmjs.com/package/cra-template-reduxstarter'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                src={CRA}
+                alt='NPM Create React App Template'
+              />
+            </Link>
+            <Link my='2%' mx={{ base: '0%', md: '2%' }}>
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                src={ComingSoon}
+                alt='Placeholder'
+              />
+            </Link>
+            <Link
+              href='https://frontend-qhy1sab1y.now.sh/'
+              isExternal
+              my='2%'
+              mx={{ base: '0%', md: '2%' }}
+            >
+              <Image
+                className='projects'
+                h='250px'
+                w='400px'
+                borderRadius='10px'
+                src={Lendr}
+                alt='Lendr App'
+              />
+            </Link>
           </Flex>
         </Flex>
       </Flex>

@@ -54,14 +54,14 @@ export const Landing = () => {
       {/*Main container  */}
       <Flex
         w='100%'
-        h='100%'
-        maxH='100vh'
-        minH='100vh'
+        h={{ base: '150vh', sm: '100%' }}
+        maxH={{ md: '100vh' }}
+        minH={{ md: '100vh' }}
         flexDir='column'
         align='center'
       >
         {/* TOP CONTAINER */}
-        <Flex maxW='1920px' w='100%' h='60%'>
+        <Flex maxW='1920px' w='100%' h={{ base: '60%', md: '60%' }}>
           <Flex w={{ base: '100%', lg: '50%' }} justify='center'>
             <Flex flexDir='column' justify='center'>
               <Text
@@ -94,7 +94,6 @@ export const Landing = () => {
               {/* BUTTON CONTAINER */}
               <Flex w='100%' justify={{ base: 'center', md: 'flex-start' }}>
                 <Button
-                  p='25px'
                   background='#2fcc76'
                   border='none'
                   color='white'
@@ -118,7 +117,7 @@ export const Landing = () => {
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h={{ base: '50%', lg: '30%' }}
+          h={{ base: '35%', lg: '30%' }}
           mb={{ base: '1%', md: '5%' }}
           py='6%'
           background='rgba(255,35,60, 0.9)'
@@ -126,11 +125,13 @@ export const Landing = () => {
           align='center'
           flexDir='column'
         >
+          {/* greeting container */}
           <Flex
-            w='100%'
+            w={{ base: '90%', md: '100%' }}
             h='80%'
             maxW='1000px'
             padding={{ base: '2%', md: '2%' }}
+            mb={{ md: '4%' }}
             align='center'
             justify='center'
             flexDir='column'
@@ -139,7 +140,8 @@ export const Landing = () => {
               fontSize={{ base: '2xl', lg: '5xl' }}
               color='white'
               mb={{ base: '10px', lg: '30px' }}
-              w={{ base: '60%' }}
+              w={{ base: '75%', md: '40%', lg: '50%' }}
+              textAlign='center'
             >
               Hey, I'm Spencer. Nice to meet you.
             </Text>
@@ -155,14 +157,14 @@ export const Landing = () => {
           <Flex
             maxW='1920px'
             w='100%'
-            h='20%'
+            h={{ base: '20%', sm: '20%' }}
             justify='center'
             align='flex-start'
           >
             {/* MAIN TABLE */}
             <Flex
               className='table'
-              display={{ base: 'none' }}
+              display={{ base: 'none', md: 'flex' }}
               h='850px'
               w='65rem'
               border='1px solid #E6ECF8'
@@ -189,7 +191,7 @@ export const Landing = () => {
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Languages I speak:
                 </Text>
-                <Text mb='50px'> JavaScript, HTML, CSS, Less </Text>
+                <Text mb='50px'> JavaScript, HTML, CSS, LESS </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Frameworks and tools:
                 </Text>
@@ -227,14 +229,14 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Material UI
+                    Responsive design
                   </ListItem>
                   <ListItem>
                     <ListIcon
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Github
+                    Integration Testing
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -281,6 +283,13 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
+                    Agile Project Management
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon
+                      icon='chevron-right'
+                      color='rgba(255,35,60, 0.9)'
+                    />
                     Attention to detail
                   </ListItem>
                   <ListItem>
@@ -288,7 +297,7 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    NPM
+                    Data Structures
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -309,7 +318,7 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    VS Code
+                    Teamwork & Collaboration
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -372,7 +381,14 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Knex
+                    SQL
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon
+                      icon='chevron-right'
+                      color='rgba(255,35,60, 0.9)'
+                    />
+                    Relational Databases
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -406,11 +422,10 @@ export const Landing = () => {
               </Flex>
             </Flex>
             {/* END BIG TABLE */}
-
             {/*  */}
             {/* MOBILE TABLE */}
-            <Flex w='100%'>
-              <Tabs variant='unstyled' mt='3rem'>
+            <Flex w='100%' display={{ md: 'none' }}>
+              <Tabs isFitted variant='unstyled' mt='3rem'>
                 <TabList mb='1em'>
                   <Tab
                     bg='white'
@@ -506,14 +521,14 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Material UI
+                          Responsive design
                         </ListItem>
                         <ListItem>
                           <ListIcon
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Github
+                          Integration Testing
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -570,6 +585,13 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
+                          Agile Project Management
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
                           Attention to detail
                         </ListItem>
                         <ListItem>
@@ -577,7 +599,7 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          NPM
+                          Data Structures
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -598,7 +620,7 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          VS Code
+                          Teamwork & Collaboration
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -671,7 +693,14 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Knex
+                          SQL
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Relational Databases
                         </ListItem>
                         <ListItem>
                           <ListIcon
