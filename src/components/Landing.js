@@ -54,14 +54,14 @@ export const Landing = () => {
       {/*Main container  */}
       <Flex
         w='100%'
-        h={{ base: '150vh', sm: '100%' }}
+        h={{ base: '150vh', md: '100%' }}
         maxH={{ md: '100vh' }}
         minH={{ md: '100vh' }}
         flexDir='column'
         align='center'
       >
         {/* TOP CONTAINER */}
-        <Flex maxW='1920px' w='100%' h={{ base: '60%', md: '60%' }}>
+        <Flex maxW='1920px' w='100%' h={{ base: '60%', md: '50%', lg: '60%' }}>
           <Flex w={{ base: '100%', lg: '50%' }} justify='center'>
             <Flex flexDir='column' justify='center'>
               <Text
@@ -72,10 +72,10 @@ export const Landing = () => {
               </Text>
               {/* SOCIAL CONTAINER */}
               <Flex
-                w={{ base: '100%', md: '30%' }}
+                w={{ base: '100%', lg: '30%' }}
                 justify='space-around'
-                px={{ base: '40px', md: '0px' }}
-                pt={{ base: '20px', md: '0px' }}
+                px={{ base: '40px', lg: '0px' }}
+                pt={{ base: '20px', lg: '0px' }}
                 mb='6%'
               >
                 <Link href='https://github.com/spencer-mcguire' isExternal>
@@ -92,7 +92,7 @@ export const Landing = () => {
                 </Link>
               </Flex>
               {/* BUTTON CONTAINER */}
-              <Flex w='100%' justify={{ base: 'center', md: 'flex-start' }}>
+              <Flex w='100%' justify={{ base: 'center', lg: 'flex-start' }}>
                 <Button
                   background='#2fcc76'
                   border='none'
@@ -117,7 +117,7 @@ export const Landing = () => {
         {/* BOTTOM CONTAINER */}
         <Flex
           w='100%'
-          h={{ base: '35%', lg: '30%' }}
+          h={{ base: '35%', md: '45%', lg: '30' }}
           mb={{ base: '1%', md: '5%' }}
           py='6%'
           background='rgba(255,35,60, 0.9)'
@@ -181,7 +181,12 @@ export const Landing = () => {
                   mt='30px'
                   color='#2fcc76'
                 />
-                <Text fontSize='2xl' mb='30px'>
+                <Text
+                  fontSize='2xl'
+                  mb='30px'
+                  w={{ base: '75%', lg: '100%' }}
+                  textAlign='center'
+                >
                   Front-end Developer
                 </Text>
                 <Text h='100px' mb='50px' textAlign='center'>
@@ -191,7 +196,7 @@ export const Landing = () => {
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Languages I speak:
                 </Text>
-                <Text mb='50px'> JavaScript, HTML, CSS, LESS </Text>
+                <Text mb='25%'> JavaScript, HTML, CSS, LESS </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Frameworks and tools:
                 </Text>
@@ -263,7 +268,12 @@ export const Landing = () => {
                   mt='30px'
                   color='#2fcc76'
                 />
-                <Text fontSize='2xl' mb='30px'>
+                <Text
+                  fontSize='2xl'
+                  mb='30px'
+                  w={{ base: '75%', lg: '100%' }}
+                  textAlign='center'
+                >
                   What makes me different?
                 </Text>
                 <Text h='100px' mb='50px' textAlign='center'>
@@ -273,7 +283,13 @@ export const Landing = () => {
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Soft Skills:
                 </Text>
-                <Text mb='50px'> Conflict Resolution, Self Starter </Text>
+                <Text
+                  mb='25%'
+                  w={{ base: '75%', lg: '100%' }}
+                  textAlign='center'
+                >
+                  Conflict Resolution, Self Starter
+                </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   More Skills:
                 </Text>
@@ -346,7 +362,12 @@ export const Landing = () => {
                   mt='30px'
                   color='#2fcc76'
                 />
-                <Text fontSize='2xl' mb='30px'>
+                <Text
+                  fontSize='2xl'
+                  mb='30px'
+                  w={{ base: '75%', lg: '100%' }}
+                  textAlign='center'
+                >
                   Back-end Developer
                 </Text>
                 <Text h='100px' mb='50px' textAlign='center'>
@@ -357,7 +378,7 @@ export const Landing = () => {
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Languages I speak:
                 </Text>
-                <Text mb='50px'> JavaScript, Python </Text>
+                <Text mb='25%'> JavaScript, Python </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Frameworks and tools:
                 </Text>
