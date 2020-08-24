@@ -140,7 +140,7 @@ export const Landing = () => {
               fontSize={{ base: '2xl', lg: '5xl' }}
               color='white'
               mb={{ base: '10px', lg: '30px' }}
-              w={{ base: '75%' }}
+              w={{ base: '75%', md: '40%', lg: '50%' }}
               textAlign='center'
             >
               Hey, I'm Spencer. Nice to meet you.
@@ -191,7 +191,7 @@ export const Landing = () => {
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Languages I speak:
                 </Text>
-                <Text mb='50px'> JavaScript, HTML, CSS, Less </Text>
+                <Text mb='50px'> JavaScript, HTML, CSS, LESS </Text>
                 <Text mb='20px' fontSize='xl' fontWeight='bold' color='#2fcc76'>
                   Frameworks and tools:
                 </Text>
@@ -229,14 +229,14 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Material UI
+                    Responsive design
                   </ListItem>
                   <ListItem>
                     <ListIcon
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Github
+                    Integration Testing
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -283,6 +283,13 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
+                    Agile Project Management
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon
+                      icon='chevron-right'
+                      color='rgba(255,35,60, 0.9)'
+                    />
                     Attention to detail
                   </ListItem>
                   <ListItem>
@@ -290,7 +297,7 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    NPM
+                    Data Structures
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -311,7 +318,7 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    VS Code
+                    Teamwork & Collaboration
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -374,7 +381,14 @@ export const Landing = () => {
                       icon='chevron-right'
                       color='rgba(255,35,60, 0.9)'
                     />
-                    Knex
+                    SQL
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon
+                      icon='chevron-right'
+                      color='rgba(255,35,60, 0.9)'
+                    />
+                    Relational Databases
                   </ListItem>
                   <ListItem>
                     <ListIcon
@@ -507,14 +521,14 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Material UI
+                          Responsive design
                         </ListItem>
                         <ListItem>
                           <ListIcon
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Github
+                          Integration Testing
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -571,6 +585,13 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
+                          Agile Project Management
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
                           Attention to detail
                         </ListItem>
                         <ListItem>
@@ -578,7 +599,7 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          NPM
+                          Data Structures
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -599,7 +620,7 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          VS Code
+                          Teamwork & Collaboration
                         </ListItem>
                         <ListItem>
                           <ListIcon
@@ -672,7 +693,14 @@ export const Landing = () => {
                             icon='chevron-right'
                             color='rgba(255,35,60, 0.9)'
                           />
-                          Knex
+                          SQL
+                        </ListItem>
+                        <ListItem>
+                          <ListIcon
+                            icon='chevron-right'
+                            color='rgba(255,35,60, 0.9)'
+                          />
+                          Relational Databases
                         </ListItem>
                         <ListItem>
                           <ListIcon
