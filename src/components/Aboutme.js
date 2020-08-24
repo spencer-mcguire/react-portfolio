@@ -16,7 +16,7 @@ export const Aboutme = () => {
       >
         <Flex maxW='1920px' w='100%' h='100%' flexDir='column'>
           {/* content container */}
-          <Flex mt={{ base: '900px', md: '650px' }} flexDir='column'>
+          <Flex mt={{ base: '225%', md: '650px' }} flexDir='column'>
             <Flex justify='center' id='aboutme'>
               <Flex
                 // h='300px'
